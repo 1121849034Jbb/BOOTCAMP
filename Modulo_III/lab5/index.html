@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <header class="row">
+            <h1>Formulario Login</h1>
+        </header>
+     
+            <form id="loginForm">
+                <div class="form-login">
+                    <label for="inputEmail">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <div class="invalid-feedback">
+                        Por favor ingresa un correo válido.
+                    </div>
+                </div>
+
+                <div class="form-login">
+                    <label for="inputPassword">Contraseña:</label>
+                    <input type="password" class="form-control" id="inputPassword" required minlength="6">
+                    <div class="invalid-feedback">
+                        La contraseña debe tener al menos 6 caracteres.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            </form>
+       
+    </section>
+
+    <!-- Script personalizado -->
+    <script src="lab5.js"></script>
+
+</body>
+
+</html>
