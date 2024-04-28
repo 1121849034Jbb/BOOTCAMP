@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="row">
+            <h1>Registro formulario</h1>
+        </header>
+
+        <section id="content" class="row">
+
+            <article class="col">
+                <form id="registroForm">
+
+                    <div class="form-group">
+                        <label for="inputEmail">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo válido.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputName">Nombre:</label>
+                        <input type="text" class="form-control" id="inputName" required minlength="3">
+                        <div class="invalid-feedback">
+                            El nombre debe tener al menos 3 caracteres.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputLastName">Apellidos:</label>
+                        <input type="text" class="form-control" id="inputLastName" required minlength="3">
+                        <div class="invalid-feedback">
+                            Los apellidos deben tener al menos 3 caracteres.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPhone">Teléfono:</label>
+                        <input type="tel" class="form-control" id="inputPhone" required minlength="6" maxlength="10"
+                            pattern="[0-9]+">
+                        <div class="invalid-feedback">
+                            El teléfono debe tener entre 6 y 10 dígitos numéricos.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword">Contraseña:</label>
+                        <input type="password" class="form-control" id="inputPassword" required minlength="6">
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 6 caracteres.
+                        </div>
+                    </div>
+                    <div class="mb-3 offset-5 col-6">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+               
+
+        </section>
+
+    </section>
+
+    <!-- Script personalizado -->
+    <script src="lab4.js"></script>
+
+</body>
+
+</html>
