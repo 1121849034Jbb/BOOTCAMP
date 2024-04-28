@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Example of form tag -->
+    <form action="/submit-form" method="post">
+        <!-- Example of label and input tags -->
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" placeholder=""><br>
+        <label for="fname">Email</label><br>
+        <input type="email" name="email" placeholder=""><br>
+        <label for="name">Textarea:</label><br>
+        <textarea name="bio" rows="4" cols="50"></textarea><br>
+        <fieldset>
+            <legend>genero:</legend>
+            <label><input type="radio" name="gender" value="male"> masculino</label>
+            <label><input type="radio" name="gender" value="female"> femenino</label>
+            <label><input type="radio" name="gender" value="other"> otro</label>
+        </fieldset><br>
+        <label for="browser">escoge el navegador que mas te gusta:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Edge">
+            <option value="Safari">
+            <option value="Firefox">
+            <option value="Opera">
+        </datalist><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
