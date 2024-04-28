@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación de Formularios con Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="row">
+            <h1>Maquetación de Formularios con Bootstrap</h1>
+        </header>
+
+        <div class="container">
+            <!-- Ejercicio 3 -->
+            <div class="row">
+                <section id="ejercicio3" class="col-md-4">
+                    <h2>Ejercicio 3</h2>
+
+                    <!-- Maquetación del formulario para el ejercicio 3 -->
+                    <form id="productForm">
+                        <div class="form-group">
+                            <label for="inputProductName">Nombre del Producto:</label>
+                            <input type="text" class="form-control" id="inputProductName" required minlength="4">
+                            <div class="invalid-feedback">
+                                El nombre del producto debe tener al menos 4 caracteres.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputProductType">Tipo de Producto:</label>
+                            <input type="text" class="form-control" id="inputProductType" required minlength="4">
+                            <div class="invalid-feedback">
+                                El tipo de producto debe tener al menos 4 caracteres.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputQuantity">Cantidad:</label>
+                            <input type="number" class="form-control" id="inputQuantity" required min="1">
+                            <div class="invalid-feedback">
+                                La cantidad debe ser mayor a 0.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPrice">Precio:</label>
+                            <input type="text" class="form-control" id="inputPrice" required minlength="5">
+                            <div class="invalid-feedback">
+                                El precio debe tener al menos 5 caracteres.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputLatitude">Latitud:</label>
+                            <input type="text" class="form-control" id="inputLatitude" required minlength="6">
+                            <div class="invalid-feedback">
+                                La latitud debe tener al menos 6 caracteres.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputLongitude">Longitud:</label>
+                            <input type="text" class="form-control" id="inputLongitude" required minlength="6">
+                            <div class="invalid-feedback">
+                                La longitud debe tener al menos 6 caracteres.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </section>
+
+                <!-- Ejercicio 4 -->
+                <section id="ejercicio4" class="col-md-4">
+                    <h2>Ejercicio 4</h2>
+                    
+                    <!-- Maquetación del formulario para el ejercicio 4 -->
+                    <form id="registroForm">
+                        <div class="form-group">
+                            <label for="inputEmail">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div class="invalid-feedback">
+                                Por favor ingresa un correo válido.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputName">Nombre:</label>
+                            <input type="text" class="form-control" id="inputName" required minlength="3">
+                            <div class="invalid-feedback">
+                                El nombre debe tener al menos 3 caracteres.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputLastName">Apellidos:</label>
+                            <input type="text" class="form-control" id="inputLastName" required minlength="3">
+                            <div class="invalid-feedback">
+                                Los apellidos deben tener al menos 3 caracteres.
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputPhone">Teléfono:</label>
+                            <input type="tel" class="form-control" id="inputPhone" required minlength="6"
+                                maxlength="10" pattern="[0-9]+">
+                            <div class="invalid-feedback">
+                                El teléfono debe tener entre 6 y 10 dígitos numéricos.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword">Contraseña:</label>
+                            <input type="password" class="form-control" id="inputPassword" required minlength="6">
+                            <div class="invalid-feedback">
+                                La contraseña debe tener al menos 6 caracteres.
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+
+                    </form>
+                </section>
+
+                <!-- Ejercicio 5 -->
+                <section id="ejercicio5" class="col-md-4">
+                    <h2>Ejercicio 5</h2>
+                    <!-- Maquetación del formulario para el ejercicio 5 -->
+                    <form id="loginForm">
+                        <div class="form-login">
+                            <label for="inputEmail">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div class="invalid-feedback">
+                                Por favor ingresa un correo válido.
+                            </div>
+                        </div>
+
+                        <div class="form-login">
+
+                            <label for="inputPassword">Contraseña:</label>
+                            <input type="password" class="form-control" id="inputPassword" required minlength="6">
+                            <div class="invalid-feedback">
+                                La contraseña debe tener al menos 6 caracteres.
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </section>
+
+            </div>
+
+        </div>
+
+
+        <footer class="row mt-4">
+            <div class="col">
+                <span>Creado en 2024 &copy;</span>
+            </div>
+        </footer>
+
+    </section>
+   
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="lab6.js"></script>
+</body>
+
+</html>
